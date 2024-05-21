@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+#game-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+@keyframes success {
+    from { background-color: #fff; }
+    to { background-color: #4CAF50; }
+}
+
+@keyframes error {
+    from { background-color: #fff; }
+    to { background-color: #FF0000; }
+}
+
+#game-container.success {
+    animation: success 0.5s forwards;
+}
+
+#game-container.error {
+    animation: error 0.5s forwards;
+}

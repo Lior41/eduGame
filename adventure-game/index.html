@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Welcome to the Adventure Game!</h1>
+        <p id="story">You are about to embark on a grand adventure!</p>
+        <button id="start-btn">Start Game</button>
+        <div id="game-interface" style="display: none;">
+            <p id="level-description"></p>
+            <button id="next-level-btn" style="display: none;">Next Level</button>
+        </div>
+        <p id="score">Score: 0</p>
+        <div id="badges"></div>
+        <audio id="success-sound" src="sounds/success.mp3" preload="auto"></audio>
+        <audio id="error-sound" src="sounds/error.mp3" preload="auto"></audio>
+    </div>
+    <div id="feedback-form" style="display: none;">
+        <h2>Feedback</h2>
+        <textarea id="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
+        <button onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
